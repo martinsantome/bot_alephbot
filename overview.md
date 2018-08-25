@@ -17,10 +17,10 @@ All this chats are represented on backend as a servers.
 
 ## Backend
 On the backend, of course, we are using nodes:
-[](overview/dashboard.png)
+![](overview/dashboard.png)
 
 ... to build the user interface... but also nodes to do the transport layer...
-[](overview/nodes.png)
+![](overview/nodes.png)
 
 Main flow is quite simple for two servers.
 
