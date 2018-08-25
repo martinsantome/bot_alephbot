@@ -32,7 +32,7 @@ We can add here as many boxes as consider.
 All this chats are represented on backend as a servers.
 
 ### FrontEnd (Bluemix)
- 	![](bluefront.png)
+![](bluefront.png)
 
 ## Backend
 On the backend, of course, we are using nodes:
@@ -60,5 +60,5 @@ The chat is as much simple as that:
 ![](overview/chat.png)
 
 ### Backend bluemix
- 	![](blueback.png)
+![](blueback.png)
 
