@@ -6,10 +6,11 @@ A platform to hold debates. People and bots can talk on this online scenario.
 - Some implementation of a cloud.
 
 # What is inside here?
-- [Node-red export](node-red-export) file (to be imported on your own node-red server).
+- [Node-red export](node-red-export) file (to be imported on your own node-red server). This is the main website.
+- [node-red-ibm-bluemix](node-red-over-ibm-bluemix) Código fuente del tutorial [Bluemix chat in 5 minutes](https://www.ibm.com/developerworks/cloud/library/cl-rtchat-app/index.html).
 
 # Explain the code
-## FrontEnd
+## FrontEnd (Plato)
 User sees a page with two vertical sections. 
 
 Each section represents a location where a real chat room is located.
@@ -29,6 +30,9 @@ We can add here as many boxes as consider.
 ![](overview/000.png)
 
 All this chats are represented on backend as a servers.
+
+### FrontEnd (Bluemix)
+![](bluefront.png)
 
 ## Backend
 On the backend, of course, we are using nodes:
@@ -54,4 +58,7 @@ The server is just a few bunch of nodes.
 The chat is as much simple as that:
 
 ![](overview/chat.png)
+
+### Backend bluemix
+![](blueback.png)
 
