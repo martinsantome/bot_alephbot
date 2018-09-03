@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <title>Ataraxia archive | timeline</title>
+        
+        <meta name="author" content="eartesania">
+        <meta name="description" content="A kind of pedagogic material to play around colaborative archives. Spring 2016 | April 17-18, 2014">
+        
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+         <link rel="stylesheet" type="text/css" href="css/main.css">
+        
+        <link rel="shortcut icon" href="img/favicon.png">
+    </head>
+
+
+    <body class="impress-not-supported">
+
+    <!--
+        For example this fallback message is only visible when there is `impress-not-supported` class on body.
+    -->
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+
+        <div id="title" class="step" data-x="0" data-y="0" data-rotate="0" data-scale="1">
+             <form>
+                  <label for="inputGraph">Graphviz Definition</label>
+                  <textarea id="inputGraph" rows="5" style="display: block" onkeyup="tryDraw();">
+                /* Example */
+                digraph {
+                    /* Note: HTML labels do not work in IE, which lacks support for &lt;foreignObject&gt; tags. */
+                    node [rx=5 ry=5 labelStyle="font: 300 14px 'Helvetica Neue', Helvetica"]
+                    edge [labelStyle="font: 300 14px 'Helvetica Neue', Helvetica;white-space:normal"]
+                    A [labelType="html"
+                       label="A <span style="font-size:32px">Big</span> <span style="color:red;">HTML</span> Source!"];
+                    C;
+                    E [label="Bold Red Sink" style="fill: #f77; font-weight: bold"];
+                    A -&gt; B -&gt; C;
+                    B -&gt; D [label="A blue label" labelStyle="fill: #55f; font-weight: bold;"];
+                    D -&gt; E [label="A thick red edge" style="stroke: #f77; stroke-width: 2px;" arrowheadStyle="fill: #f77"];
+                    C -&gt; E;
+                    A -&gt; D [labelType="html" style="white-space:normal" label="A multi-rank <span style="color:blue;">HTML</span> edge!"];
+                }
+                  </textarea>
+
+                  <a id="graphLink">Link for this graph</a>
+                </form>
+
+                <h2>Graph Visualization</h2>
+
+                <svg width="800" height="600">
+                  <g>
+                </g></svg>
+
+            <script src="vendors/d3.js" charset="utf-8"></script>
+            <script src="vendors/dagre-d3.js"></script>
+
+            <script src="http://cpettitt.github.io/project/graphlib-dot/v0.5.2/graphlib-dot.js"></script>
+            <script src="libs/engine.js"></script>
+           
+
+        </div>
+
+
+        <div id="about" class="step " data-x="1000" data-y="0" data-z="0" data-rotate="0" data-scale="1">
+          
+            <a class="twitter-timeline" href="f_a_r_o_.html" data-widget-id="684789828882423808" height="800" data-chrome="transparent">
+                @f_a_r_o_.</a>
+
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+        </div>
+
+        <div id="overview" class="step" data-x="0" data-z="0" data-scale="1">    </div>
+
+    </div>
+
+    <div class="hint">
+        <p>Use a spacebar or arrow keys to navigate</p>
+    </div>
+
+    <script>
+        if ("ontouchstart" in document.documentElement) { 
+            document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+        }
+    </script>
+
+    <script src="js/impress.js"></script>
+
+    <script>impress().init();</script>
+
+    </body>
+</html>
